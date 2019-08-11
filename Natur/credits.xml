@@ -1,0 +1,67 @@
+﻿<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="credits.lua" />
+	<Frame name="NaturCreditsFrame" hidden="true" parent="UIParent" toplevel="true">
+		<Size>
+			<AbsDimension x="542" y="267" />
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER">
+				<Offset x="23" y="24" />
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11" />
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="32" />
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="32" />
+			</EdgeSize>
+		</Backdrop>
+		<Layers>
+			<Layer>
+				<FontString name="FontString2" inherits="GameFontHighlight" text="This version of Natur Enemy Castbar is developed by Michael Boyle (www.softrix.co.uk) from the ground up, and is a complete rewrite based on the original addon by Naturfreund. You can find me in game called Afterlife, Quality, Fantastique, Challenger and Amarantine on the Aszune (EU) realm (Alliance).">
+					<Size x="494" y="70" />
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="26" y="-67" />
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="FontString1" inherits="NumberFontNormalHuge" text="Natur Enemy Castbar">
+					<Size x="494" y="43" />
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="26" y="-18" />
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="FontString5" inherits="GameFontHighlight" text="Please use the Curse or Wowinterface pages for support. ">
+					<Size x="494" y="46" />
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="26" y="-143" />
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="CloseCreditsFrame" inherits="UIPanelButtonTemplate" text="&lt;&lt; Back">
+				<Size x="72" y="22" />
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="236" y="-209" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<PostClick>
+						CloseCreditsFrame_PostClick();
+					</PostClick>
+				</Scripts>
+			</Button>
+		</Frames>
+	</Frame>
+</Ui>
