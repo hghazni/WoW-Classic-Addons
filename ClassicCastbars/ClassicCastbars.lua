@@ -22,6 +22,7 @@ ClassicCastbars = addon -- global ref for ClassicCastbars_Options
 local pairs = _G.pairs
 local UnitGUID = _G.UnitGUID
 local GetSpellTexture = _G.GetSpellTexture
+local GetSpellInfo = _G.GetSpellInfo
 local CombatLogGetCurrentEventInfo = _G.CombatLogGetCurrentEventInfo
 local GetTime = _G.GetTime
 local max = _G.math.max
@@ -300,13 +301,13 @@ local crowdControls = namespace.crowdControls
 local castedSpells = namespace.castedSpells
 
 function addon:COMBAT_LOG_EVENT_UNFILTERED()
-    local _, eventType, _, srcGUID, _, srcFlags, _, dstGUID,  _, dstFlags, _, _, spellName, _, damage, _, resisted, blocked, absorbed = CombatLogGetCurrentEventInfo()
+    local _, eventType, _, srcGUID, _, srcFlags, _, dstGUID,  _, dstFlags, _, _, spellName, _, damage, _, resisted, blocked, absorbed = CombatLogGetCurrentEventInfo() -- luacheck: ignore 211
 
     if eventType == "SPELL_CAST_START" then
-        local spellData = castedSpells[spellName]
-        if not spellData then return end
-        local castTime = spellData[1]
-        local icon = GetSpellTexture(spellData[2])
+        local spellID = castedSpells[spellName]
+        if not spellID then return end
+        local _, _, icon, castTime = GetSpellInfo(spellID)
+        if not castTime or castTime == 0 then return end
 
         -- Reduce cast time for certain spells
         local reducedTime = castTimeTalentDecreases[spellName]
@@ -362,6 +363,7 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
         return self:DeleteCast(dstGUID)
     elseif eventType == "SWING_DAMAGE" or eventType == "ENVIRONMENTAL_DAMAGE" or eventType == "RANGE_DAMAGE" or eventType == "SPELL_DAMAGE" then
         if blocked or absorbed then return end
+        --if resisted >= damage then return end -- TODO: is fully resisted? need to confirm
 
         if bit_band(dstFlags, COMBATLOG_OBJECT_TYPE_PLAYER) > 0 then -- is player
             return self:SetCastDelay(dstGUID)
