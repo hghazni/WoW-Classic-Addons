@@ -10,7 +10,6 @@ Current list of addons to be used in the Classic WoW client
  - DBM
  - Outfitter
  - Auctioneer
- - Weapon Swing Timer
  - Vendor Price
  - XP Counter
 
