@@ -10,3 +10,4 @@ Current list of addons to be used in the Classic WoW client
  - Auctioneer
  - Vendor Price
  - XP Counter
+ - Quartz
