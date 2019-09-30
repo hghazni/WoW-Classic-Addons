@@ -1,0 +1,42 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	<Frame name="TargetClassIconFrame" parent="TargetFrame">
+		<Size> <AbsDimension x="42" y="72" /> </Size>
+		<Anchors>
+			<Anchor point="TOPLEFT"> 
+				<Offset> <AbsDimension x="-19" y="-9" /> </Offset> 
+			</Anchor>
+		</Anchors>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="TargetFaction" file="Interface/Glues/CHARACTERCREATE/Race-Change-BannerCover">
+					<Size> <AbsDimension x="16" y="30" /> </Size>
+					<Anchors>
+						<Anchor point="TOPLEFT"> 
+							<Offset> <AbsDimension x="3" y="-29" /> </Offset> 
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+				<Texture name ="TargetClassIcon" file="Interface/Glues/CHARACTERCREATE/UI-CharacterCreate-Classes">
+					<Size> <AbsDimension x="23" y="23" /> </Size>
+					<Anchors>
+						<Anchor point="TOPLEFT"> 
+							<Offset> <AbsDimension x="0" y="-12" /> </Offset> 
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<FontString name="TargetType" font="Fonts/FRIZQT__.TTF" outline="NORMAL">
+					<FontHeight val="9"/>
+					<Anchors> 
+						<Anchor point="TOPLEFT">
+							<Offset> <AbsDimension x="0" y="0" /> </Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+	</Frame>
+</Ui>
