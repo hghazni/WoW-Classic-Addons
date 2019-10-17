@@ -1,9 +1,8 @@
 # Deadly Boss Mods Core
 
-## [8.2.15](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/8.2.15) (2019-08-21)
-[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/8.2.14...8.2.15)
+## [1.13.15](https://github.com/DeadlyBossMods/DBM-Classic/tree/1.13.15) (2019-10-10)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.14...1.13.15)
 
-- Fix eternal palace and DMF using italian in all languages do to bugs in merged pull request  
-- refactor Boss Unit scanner some more to get rid of crappy 10 year ago me code, as well as add support for allowing tank when allow tank arg is passed  
-- Update recent zhCN (#55)  
-    更新3条翻译  
+- Prepping a classic DBM release  
+- Added code to supress HUD Canvas during intro cut scenes to fix a bug where users would see floating quest markers on top of cut scene when using the Questie Integration  
+- Added audio countdown to emerge and submerge by default on ragnaros (Oops this should have made 1.13.14, oh well it'l be in next release.)  

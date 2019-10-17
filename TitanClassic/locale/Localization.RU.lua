@@ -1,8 +1,10 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("TitanClassic","ruRU")
 if not L then return end
 
-L["TITAN_PANEL"] = "Титан Панель";
-local TITAN_PANEL = "Титан Панель";
+L["TITAN_PANEL"] = "Титан Панель Classic";
+local TITAN_PANEL = "Титан Панель Classic";
+L["TITAN_PANEL_ONLY"] = "Титан Панель";
+local TITAN_PANEL_ONLY = "Титан Панель";
 L["TITAN_DEBUG"] = "<Титан>";
 L["TITAN_PRINT"] = "Титан";
 
@@ -71,12 +73,10 @@ L["TITAN_PANEL_SLASH_PROFILE_2"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<имя>
 L["TITAN_PANEL_SLASH_PROFILE_3"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<сервер>: |cffffffffможет быть задано название сервера или 'TitanCustomProfile'."
 L["TITAN_PANEL_SLASH_SILENT_0"] = LIGHTYELLOW_FONT_COLOR_CODE.."Usage: |cffffffff/titan {silent}";
 L["TITAN_PANEL_SLASH_SILENT_1"] = LIGHTYELLOW_FONT_COLOR_CODE.."silent: |cffffffffToggles "..TITAN_PANEL.." to load silently.";
-L["TITAN_PANEL_SLASH_ORDERHALL_0"] = LIGHTYELLOW_FONT_COLOR_CODE.."Usage: |cffffffff/titan {orderhall}";
-L["TITAN_PANEL_SLASH_ORDERHALL_1"] = LIGHTYELLOW_FONT_COLOR_CODE.."orderhall: |cffffffffToggles "..TITAN_PANEL.." to hide Order Hall Command Bar.";
 L["TITAN_PANEL_SLASH_HELP_0"] = LIGHTYELLOW_FONT_COLOR_CODE.."Используйте: |cffffffff/titan {help | help <topic>}";
-L["TITAN_PANEL_SLASH_HELP_1"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<topic>: reset/gui/profile/silent/orderhall/help ";
+L["TITAN_PANEL_SLASH_HELP_1"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<topic>: reset/gui/profile/silent/help ";
 L["TITAN_PANEL_SLASH_ALL_0"] = LIGHTYELLOW_FONT_COLOR_CODE.."Используйте: |cffffffff/titan <topic>";
-L["TITAN_PANEL_SLASH_ALL_1"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<topic>: |cffffffffreset/gui/profile/silent/orderhall/help ";
+L["TITAN_PANEL_SLASH_ALL_1"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<topic>: |cffffffffreset/gui/profile/silent/help ";
 
 -- slash command responses
 L["TITAN_PANEL_SLASH_RESP1"] = LIGHTYELLOW_FONT_COLOR_CODE.."Масштаб шрифта подсказки Titan Panel сброшен.";
@@ -94,7 +94,7 @@ L["TITAN_PANEL_GLOBAL_RESET_PART"] = "перенастройка опций";
 L["TITAN_PANEL_GLOBAL_ERR_1"] = "Вы не можете загрузить профиль, когда используется основной профиль";
 
 -- general panel locale
-L["TITAN_PANEL_VERSION_INFO"] = "|cffffd700 от |cffff8c00"..TITAN_PANEL.." Development Team";
+L["TITAN_PANEL_VERSION_INFO"] = "|cffffd700 от |cffff8c00"..TITAN_PANEL_ONLY.." Development Team";
 L["TITAN_PANEL_MENU_TITLE"] = "Титан панель";
 L["TITAN_PANEL_MENU_HIDE"] = "Скрыть";
 L["TITAN_PANEL_MENU_IN_COMBAT_LOCKDOWN"] = "(В Бою)";
@@ -245,10 +245,13 @@ L["TITAN_AMMO_BUTTON_LABEL_THROWN"] = "Бросок: ";
 L["TITAN_AMMO_BUTTON_LABEL_AMMO_THROWN"] = "Боеприпасов/Бросок: ";
 L["TITAN_AMMO_TOOLTIP"] = "Число доступных Боеприпасов/Бросков";
 L["TITAN_AMMO_MENU_TEXT"] = "Боеприпасы/Броски";
-L["TITAN_AMMO_BUTTON_NOAMMO"] = "Нет боеприпасов";
+L["TITAN_AMMO_BUTTON_NOAMMO"] = "--";
 L["TITAN_AMMO_MENU_REFRESH"] = "Обновление отображения";
 L["TITAN_AMMO_BULLET_NAME"] = "Отображать название боеприпасов";
-	
+L["TITAN_AMMO_THROWN"] = "Thrown";
+L["TITAN_AMMO_GUN"] = "Bullets";
+L["TITAN_AMMO_BOW"] = "Arrows";
+
 L["TITAN_BAG_FORMAT"] = "%d/%d";
 L["TITAN_BAG_BUTTON_LABEL"] = "Сумки: ";
 L["TITAN_BAG_TOOLTIP"] = "Использование сумок";
@@ -332,6 +335,12 @@ L["TITAN_LOCATION_MAP_PLAYER_COORDS_TEXT"] = "Игрок(X,Y): %s";
 L["TITAN_LOCATION_NO_COORDS"] = "Нет координат";
 L["TITAN_LOCATION_MENU_SHOW_LOC_ON_MINIMAP_TEXT"] = "Показывать местонахождения на мини-карте";
 L["TITAN_LOCATION_MENU_UPDATE_WORLD_MAP"] = "Обновить карту мира при смене зоны";
+L["TITAN_LOCATION_MENU_MAP_COORDS_TITLE"] = "Coordinates Location on Map";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_1"] = "Top Left";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_2"] = "Top Right";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_3"] = "Bottom Left";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_4"] = "Bottom";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_5"] = "Bottom Right";
 
 L["TITAN_FPS_FORMAT"] = "%.1f";
 L["TITAN_FPS_BUTTON_LABEL"] = "FPS: ";
@@ -447,6 +456,21 @@ L["TITAN_XP_XPGAINS_LABEL_SHORT"] = "Получение опыта: ";
 L["TITAN_XP_XPGAINS_LABEL"] = "Опыта до уровня (%s опыта в последний раз): ";
 L["TITAN_XP_MENU_SIMPLE_BUTTON_XPGAIN"] = "Показать необходимый опыт до уровня";
 
+L["TITAN_REGEN_MENU_TEXT"] = "Регенерация"
+L["TITAN_REGEN_MENU_TOOLTIP_TITLE"] = "Информация о регенерации"
+L["TITAN_REGEN_MENU_SHOW2"] = "ЗД"
+L["TITAN_REGEN_MENU_SHOW3"] = "МН"
+L["TITAN_REGEN_MENU_SHOW4"] = "в процентах"
+L["TITAN_REGEN_BUTTON_TEXT_HP"] = "ЗД: "
+L["TITAN_REGEN_BUTTON_TEXT_MP"] = " МН: "
+L["TITAN_REGEN_TOOLTIP1"] = "Здоровье: \t"..GREEN_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." / " ..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." ("..RED_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE..")";
+L["TITAN_REGEN_TOOLTIP2"] = "Мана: \t"..GREEN_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." / " ..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." ("..RED_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE..")";
+L["TITAN_REGEN_TOOLTIP3"] = "Лучшая регенерация ЗД: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE;
+L["TITAN_REGEN_TOOLTIP4"] = "Худшая регенерация ЗД: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE;
+L["TITAN_REGEN_TOOLTIP5"] = "Лучшая регенерация МН: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE;
+L["TITAN_REGEN_TOOLTIP6"] = "Худшая регенерация МН: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE;
+L["TITAN_REGEN_TOOLTIP7"] = "Регенерация МН в последней схватке: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." ("..GREEN_FONT_COLOR_CODE.."%.2f"..FONT_COLOR_CODE_CLOSE.."%%)";
+
 --Titan Repair
 L["REPAIR_LOCALE"] = {
 	menu = "Ремонт",
@@ -491,11 +515,6 @@ L["REPAIR_LOCALE"] = {
 };
 
 L["TITAN_REPAIR"] = "Titan - ремонт"
-L["TITAN_REPAIR_GBANK_TOTAL"] = "Средства гильд банка :"
-L["TITAN_REPAIR_GBANK_WITHDRAW"] = "Доступная сумма из гильд банка :"
-L["TITAN_REPAIR_GBANK_USEFUNDS"] = "Использовать средства гильд банка"
-L["TITAN_REPAIR_GBANK_NOMONEY"] = "Гильд Банк не в состоянии заплотить за ремонт, или вы не можете воспользоваться такой суммой."
-L["TITAN_REPAIR_GBANK_NORIGHTS"] = "Вы не состоите в гильдии либо у вас нет полномочий использовать средства с гильд банка для ремонта ваших предметов."
 L["TITAN_REPAIR_CANNOT_AFFORD"] = "В данный момент вы не в состоянии отремонтироваться."
 L["TITAN_REPAIR_REPORT_COST_MENU"] = "Сообщить цену ремонта в чат"
 L["TITAN_REPAIR_REPORT_COST_CHAT"] = "Ремонт обошелся в "

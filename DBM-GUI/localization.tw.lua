@@ -107,7 +107,6 @@ L.ShowGuildMessages 		= "在聊天視窗顯示的開戰/戰勝/滅團的公會�
 L.ShowGuildMessagesPlus		= "也顯示公會隊伍傳奇+開戰/戰勝/滅團的訊息(需要團隊選項)"
 L.WhisperMessages			= "密語訊息選項"
 L.AutoRespond 				= "啟用戰鬥中自動密語回覆"
-L.EnableStatus 				= "回覆'status'的密語"
 L.WhisperStats 				= "在密語回應中加入戰勝/滅團狀態"
 L.DisableStatusWhisper 		= "禁用整個團隊狀態密語(需要隊伍隊長)。只套用於普通/英雄/傳奇團隊和傳奇+地城"
 L.DisableGuildStatus 		= "禁用整個團隊進度訊息至公會(需要隊伍隊長)。"
@@ -230,7 +229,6 @@ L.EventWipeSound			= "設置戰鬥滅團時的音效"
 L.EventEngageSound			= "設置戰鬥開戰時的音效"
 L.EventDungeonMusic			= "在地城/團隊內設置撥放的音樂"
 L.EventEngageMusic			= "設置戰鬥中的音樂"
-L.EventTurtleMusic			= "設置turtle beach quests中的音樂"
 L.Area_EventSoundsExtras	= "事件音效選項"
 L.EventMusicCombined		= "允許在地城和戰鬥選擇的所有音效選項(此選項需要UI重載去反映改變)"
 L.Area_EventSoundsFilters	= "事件音效過濾條件"
@@ -280,7 +278,6 @@ L.Area_PullTimer			= "開怪計時器過濾選項"
 L.DontShowPTNoID			= "阻擋與你不同區域ID送出的開怪倒數計時條"
 L.DontShowPT				= "不要顯示開怪/休息倒數計時條"
 L.DontShowPTText			= "不要顯示開怪/休息提示文字"
-L.DontShowPTCountdownText	= "不要顯示開怪計時器倒數文字"
 L.DontPlayPTCountdown		= "完全不要使用開怪/休息/開戰/自訂計時器倒數音效"
 L.PT_Threshold				= "不要使用高於%d秒以上的開怪/休息/開戰/自訂倒數計時器音效"
 
@@ -299,7 +296,6 @@ L.AfterFirst				= "在副本中每次動畫播放一次之後"
 L.Always					= ALWAYS
 L.CombatOnly				= "在任何戰鬥中禁用"
 L.RaidCombat				= "只在首領戰鬥中禁用"
-L.HideBonusHeader			= "隱藏額外獎勵視窗低於..."
 L.TrivialContent			= "五人地城"--Basically anything below 340
 L.NormalRaider				= "傳奇地城+5和隨機團隊"--Basically, anything below 355
 L.HeroicRaider				= "傳奇地城+10和英雄團隊和非戰爭前線首領"--Basically anything below 370
@@ -308,7 +304,6 @@ L.MythicRaider				= "傳奇團隊"--Basically anything below 385
 L.Panel_ExtraFeatures		= "額外功能"
 --
 L.Area_ChatAlerts			= "文字警告選項"
-L.RoleSpecAlert				= "當你加入團隊時捨取專精不符合你目前專精顯示警告訊息"
 L.CheckGear					= "開怪時顯示裝備警告訊息 (當你裝備的裝備等級低於包包裡40等以上或主手武器沒有裝備時顯示警告訊息)"
 L.WorldBossAlert			= "當你的工會成員或是朋友可能在你的伺服器上開戰世界首領時顯示警告訊息(如果發送者是被戰復的會不準確)"
 --
@@ -317,7 +312,6 @@ L.LFDEnhance				= "使用主要或對話聲音頻道播放準備確認音效和�
 L.WorldBossNearAlert		= "當你需要的世界首領在你附近開戰播放準備確認音效和閃爍應用程式圖示"
 L.RLReadyCheckSound			= "從主要或對話音效頻道播放準備確認音效和閃爍應用程式圖示"
 L.AFKHealthWarning			= "播放警告聲音和閃爍應用程式圖示假如你在暫離時被攻擊"
-L.AutoReplySound			= "當接收到DBM自動回覆密語時播放警告聲和閃爍應用程式圖示"
 --
 L.TimerGeneral 				= "計時器選項"
 L.SKT_Enabled				= "顯示目前戰鬥的最佳紀錄勝利計時器"

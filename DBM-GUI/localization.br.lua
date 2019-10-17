@@ -122,7 +122,6 @@ L.ShowDefeatMessage 		= "Exibir mensagens ao vencer chefes no quadro de chat"
 L.ShowGuildMessages 		= "Exibir mensagens de puxada/vitória/derrota no quadro de chat"
 L.WhisperMessages			= "Opções de mensagens de sussurro"
 L.AutoRespond 				= "Responder automaticamente a sussurros durante a luta"
-L.EnableStatus 				= "Responder a sussurros de 'status'"
 L.WhisperStats 				= "Incluir estatísticas de derrotas/vitórias nas respostas a sussurros"
 
 -- Tab: Barsetup
@@ -229,7 +228,6 @@ L.DontShowPTNoID			= "Bloquear o temporizador de Puxada se não foi enviado na m
 L.DontShowPT				= "Não exibir a barra de puxada"
 L.DontShowPTText			= "Não exibir texto de anúncio do temporizador de puxada"
 L.DontPlayPTCountdown		= "Não tocar o áudio da contagem regressiva de puxada/combate/customizado"
-L.DontShowPTCountdownText	= "Não exibir o texto da contagem regressiva de puxada/combate/customizado"
 L.PT_Threshold				= "Não exibir o texto da contagem regressiva de puxada/combate/customizado acima de: %d"
 
 L.Panel_HideBlizzard		= "Esconder Blizzard"
@@ -246,7 +244,6 @@ L.AfterFirst				= "Depois que o vídeo for assistido uma vez"
 
 L.Panel_ExtraFeatures		= "Características Extra"
 L.Area_ChatAlerts			= "Opções de alerta do Chat"
-L.RoleSpecAlert				= "Exibir mensagem de alerta quando sua especialização de saque não corresponder à sua especialização atual ao entrar na raid"
 L.CheckGear					= "envia um mensagem de alerta quando o seu ilvl equipado for muito menor do que o ilvl nas bolsas(40+)"
 L.WorldBossAlert			= "Exibir mensagem de alerta quando um chefe do mundo possivelmente for atacado no seu reino por membros da sua guilda ou amigos (inaccurate if sender is CRZed)"
 L.Area_SoundAlerts			= "Opções de Som de Alerta"

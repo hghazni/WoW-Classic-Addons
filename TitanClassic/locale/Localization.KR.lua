@@ -3,6 +3,8 @@ if not L then return end
 
 L["TITAN_PANEL"] = "타이탄 패널 Classic";
 local TITAN_PANEL = "타이탄 패널 Classic";
+L["TITAN_PANEL_ONLY"] = "타이탄 패널";
+local TITAN_PANEL_ONLY = "타이탄 패널";
 L["TITAN_DEBUG"] = "<Titan>";
 L["TITAN_PRINT"] = "Titan";
 
@@ -71,12 +73,10 @@ L["TITAN_PANEL_SLASH_PROFILE_2"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<name>: 
 L["TITAN_PANEL_SLASH_PROFILE_3"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<server>: |cffffffff현재 서버이름 또는 'TitanCustomProfile'로 프로필을 변경할 수 있습니다."
 L["TITAN_PANEL_SLASH_SILENT_0"] = LIGHTYELLOW_FONT_COLOR_CODE.."Usage: |cffffffff/titan {silent}";
 L["TITAN_PANEL_SLASH_SILENT_1"] = LIGHTYELLOW_FONT_COLOR_CODE.."silent: |cffffffffToggles "..TITAN_PANEL.." to load silently.";
-L["TITAN_PANEL_SLASH_ORDERHALL_0"] = LIGHTYELLOW_FONT_COLOR_CODE.."Usage: |cffffffff/titan {orderhall}";
-L["TITAN_PANEL_SLASH_ORDERHALL_1"] = LIGHTYELLOW_FONT_COLOR_CODE.."orderhall: |cffffffffToggles "..TITAN_PANEL.." to hide Order Hall Command Bar.";
 L["TITAN_PANEL_SLASH_HELP_0"] = LIGHTYELLOW_FONT_COLOR_CODE.."사용법: |cffffffff/titan {help | 도움말 <topic>}";
-L["TITAN_PANEL_SLASH_HELP_1"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<topic>: reset/gui/profile/silent/orderhall/help ";
+L["TITAN_PANEL_SLASH_HELP_1"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<topic>: reset/gui/profile/silent/help ";
 L["TITAN_PANEL_SLASH_ALL_0"] = LIGHTYELLOW_FONT_COLOR_CODE.."사용법: |cffffffff/titan <topic>";
-L["TITAN_PANEL_SLASH_ALL_1"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<topic>: |cffffffffreset/gui/profile/silent/orderhall/help ";
+L["TITAN_PANEL_SLASH_ALL_1"] = " - "..LIGHTYELLOW_FONT_COLOR_CODE.."<topic>: |cffffffffreset/gui/profile/silent/help ";
 
 -- slash command responses
 L["TITAN_PANEL_SLASH_RESP1"] = LIGHTYELLOW_FONT_COLOR_CODE..TITAN_PANEL.." 툴팁 글꼴 크기가 초기화 되었습니다.";
@@ -94,7 +94,7 @@ L["TITAN_PANEL_GLOBAL_RESET_PART"] = "설정 초기화";
 L["TITAN_PANEL_GLOBAL_ERR_1"] = "공통 프로필로 사용할때 불러오지 못할 수도 있습니다.";
 
 -- general panel locale
-L["TITAN_PANEL_VERSION_INFO"] = "|cffff8c00"..TITAN_PANEL.." |cffffd700개발팀";
+L["TITAN_PANEL_VERSION_INFO"] = "|cffff8c00"..TITAN_PANEL_ONLY.." |cffffd700개발팀";
 L["TITAN_PANEL_MENU_TITLE"] = "타이판 패널";
 L["TITAN_PANEL_MENU_HIDE"] = "숨김";
 L["TITAN_PANEL_MENU_IN_COMBAT_LOCKDOWN"] = "(전투중)";
@@ -245,10 +245,13 @@ L["TITAN_AMMO_BUTTON_LABEL_THROWN"] = "Thrown: ";
 L["TITAN_AMMO_BUTTON_LABEL_AMMO_THROWN"] = "Ammo/Thrown: ";
 L["TITAN_AMMO_TOOLTIP"] = "Equipped Ammo/Thrown Count";
 L["TITAN_AMMO_MENU_TEXT"] = "Ammo/Thrown";
-L["TITAN_AMMO_BUTTON_NOAMMO"] = "No Ammo";
+L["TITAN_AMMO_BUTTON_NOAMMO"] = "--";
 L["TITAN_AMMO_MENU_REFRESH"] = "Refresh Display";
 L["TITAN_AMMO_BULLET_NAME"] = "Show Ammo Name";
-     
+L["TITAN_AMMO_THROWN"] = "Thrown";
+L["TITAN_AMMO_GUN"] = "Bullets";
+L["TITAN_AMMO_BOW"] = "Arrows";
+
 L["TITAN_BAG_FORMAT"] = "%d/%d";
 L["TITAN_BAG_BUTTON_LABEL"] = "가방: ";
 L["TITAN_BAG_TOOLTIP"] = "가방 정보";
@@ -331,6 +334,12 @@ L["TITAN_LOCATION_MAP_CURSOR_COORDS_TEXT"] = "커서(X,Y): %s";
 L["TITAN_LOCATION_MAP_PLAYER_COORDS_TEXT"] = "플레이어(X,Y): %s";
 L["TITAN_LOCATION_NO_COORDS"] = "좌표 없음";
 L["TITAN_LOCATION_MENU_SHOW_LOC_ON_MINIMAP_TEXT"] = "미니맵에 위치를 표시합니다.";
+L["TITAN_LOCATION_MENU_MAP_COORDS_TITLE"] = "Coordinates Location on Map";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_1"] = "Top Left";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_2"] = "Top Right";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_3"] = "Bottom Left";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_4"] = "Bottom";
+L["TITAN_LOCATION_MENU_MAP_COORDS_LOC_5"] = "Bottom Right";
 
 L["TITAN_FPS_FORMAT"] = "%.1f";
 L["TITAN_FPS_BUTTON_LABEL"] = "FPS: ";
@@ -446,6 +455,21 @@ L["TITAN_XP_XPGAINS_LABEL_SHORT"] = "획득: ";
 L["TITAN_XP_XPGAINS_LABEL"] = "레벨당 획득한 경험치 (최근 획득한 경험치 %s 기준): ";
 L["TITAN_XP_MENU_SIMPLE_BUTTON_XPGAIN"] = "레벨당 경험치 획득 표시";
 
+L["TITAN_REGEN_MENU_TEXT"] = "Regen"
+L["TITAN_REGEN_MENU_TOOLTIP_TITLE"] = "Regen Info"
+L["TITAN_REGEN_MENU_SHOW2"] = "HP"
+L["TITAN_REGEN_MENU_SHOW3"] = "MP"
+L["TITAN_REGEN_MENU_SHOW4"] = "As Percentage"
+L["TITAN_REGEN_BUTTON_TEXT_HP"] = "HP: "
+L["TITAN_REGEN_BUTTON_TEXT_MP"] = " MP: "
+L["TITAN_REGEN_TOOLTIP1"] = "Health: \t"..GREEN_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." / " ..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." ("..RED_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE..")";
+L["TITAN_REGEN_TOOLTIP2"] = "Mana: \t"..GREEN_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." / " ..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." ("..RED_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE..")";
+L["TITAN_REGEN_TOOLTIP3"] = "Best HP Regen: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE;
+L["TITAN_REGEN_TOOLTIP4"] = "Worst HP Regen: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE;
+L["TITAN_REGEN_TOOLTIP5"] = "Best MP Regen: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE;
+L["TITAN_REGEN_TOOLTIP6"] = "Worst MP Regen: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE;
+L["TITAN_REGEN_TOOLTIP7"] = "MP Regen in Last Fight: \t"..HIGHLIGHT_FONT_COLOR_CODE.."%d"..FONT_COLOR_CODE_CLOSE.." ("..GREEN_FONT_COLOR_CODE.."%.2f"..FONT_COLOR_CODE_CLOSE.."%%)";
+
 --Titan Repair
 L["REPAIR_LOCALE"] = {
 	menu = "수리",
@@ -490,11 +514,6 @@ L["REPAIR_LOCALE"] = {
 };
 
 L["TITAN_REPAIR"] = "타이탄 수리"
-L["TITAN_REPAIR_GBANK_TOTAL"] = "길드 은행 금액 :"
-L["TITAN_REPAIR_GBANK_WITHDRAW"] = "길드 은행 취소 수락 :"
-L["TITAN_REPAIR_GBANK_USEFUNDS"] = "길드 은행 사용"
-L["TITAN_REPAIR_GBANK_NOMONEY"] = "길드 은행의 잔액이 부족하여 수리가 불가능합니다."
-L["TITAN_REPAIR_GBANK_NORIGHTS"] = "길드가 없거나 길드 은행의 비용으로 수리할 권한이 없습니다."
 L["TITAN_REPAIR_CANNOT_AFFORD"] = "길드 은행의 잔액이 부족하여 현재는 수리할 수 없습니다."
 L["TITAN_REPAIR_REPORT_COST_MENU"] = "대화창에 수리비용 표시"
 L["TITAN_REPAIR_REPORT_COST_CHAT"] = "수리비용: "
