@@ -34,29 +34,19 @@ DBM_CORE_MOD_AVAILABLE				= "%s is available for this zone. You can find downloa
 DBM_CORE_COMBAT_STARTED				= "%s engaged. Good luck and have fun! :)"
 DBM_CORE_COMBAT_STARTED_IN_PROGRESS	= "Engaged an in progress fight against %s. Good luck and have fun! :)"
 DBM_CORE_GUILD_COMBAT_STARTED		= "%s has been engaged by guild"
-DBM_CORE_SCENARIO_STARTED			= "%s started. Good luck and have fun! :)"
-DBM_CORE_SCENARIO_STARTED_IN_PROGRESS	= "Joined %s a scenario that's in progress. Good luck and have fun! :)"
 DBM_CORE_BOSS_DOWN					= "%s down after %s!"
 DBM_CORE_BOSS_DOWN_I				= "%s down! You have %d total victories."
 DBM_CORE_BOSS_DOWN_L				= "%s down after %s! Your last kill took %s and your fastest kill took %s. You have %d total victories."
 DBM_CORE_BOSS_DOWN_NR				= "%s down after %s! This is a new record! (Old record was %s). You have %d total victories."
 DBM_CORE_GUILD_BOSS_DOWN			= "%s has been defeated by guild after %s!"
-DBM_CORE_SCENARIO_COMPLETE			= "%s completed after %s!"
-DBM_CORE_SCENARIO_COMPLETE_I		= "%s completed! You have %d total clears."
-DBM_CORE_SCENARIO_COMPLETE_L		= "%s completed after %s! Your last clear took %s and your fastest clear took %s. You have %d total clears."
-DBM_CORE_SCENARIO_COMPLETE_NR		= "%s completed after %s! This is a new record! (Old record was %s). You have %d total clears."
 DBM_CORE_COMBAT_ENDED_AT			= "Combat against %s (%s) ended after %s."
 DBM_CORE_COMBAT_ENDED_AT_LONG		= "Combat against %s (%s) ended after %s. You have %d total wipes on this difficulty."
 DBM_CORE_GUILD_COMBAT_ENDED_AT		= "Guild has wiped on %s (%s) after %s."
-DBM_CORE_SCENARIO_ENDED_AT			= "%s ended after %s."
-DBM_CORE_SCENARIO_ENDED_AT_LONG		= "%s ended after %s. You have %d total incompletes on this difficulty."
 DBM_CORE_COMBAT_STATE_RECOVERED		= "%s was engaged %s ago, recovering timers..."
 DBM_CORE_TRANSCRIPTOR_LOG_START		= "Transcriptor logging started."
 DBM_CORE_TRANSCRIPTOR_LOG_END		= "Transcriptor logging ended."
 
 DBM_CORE_MOVIE_SKIPPED				= "DBM has attempted to skip a cut scene automatically."
-DBM_CORE_BONUS_SKIPPED				= "DBM has automatically closed bonus loot frame. If you need to get this frame back, type /dbmbonusroll within 3 minutes"
-DBM_CORE_BONUS_EXPIRED				= "You've attempted to use /dbmbonusroll to bring up bonus roll window but there is currently no bonus roll active."
 
 DBM_CORE_AFK_WARNING				= "You are AFK and in combat (%d percent health remaining), firing sound alert. If you are not AFK, clear your AFK flag or disable this option in 'extra features'."
 
@@ -99,7 +89,7 @@ DBM_CORE_NOTESHAREERRORALREADYOPEN	= "Cannot open a shared note link while note 
 DBM_CORE_ALLMOD_DEFAULT_LOADED		= "Default options for all mods in this instance have been loaded."
 DBM_CORE_ALLMOD_STATS_RESETED		= "All mod stats have been reset."
 DBM_CORE_MOD_DEFAULT_LOADED			= "Default options for this fight have been loaded."
-DBM_CORE_SOUNDKIT_MIGRATION			= "One or more of your warning/special warning sounds were reset to defaults do to incompatability with patch 8.2 and later. DBM now only supports sound files residing your addons folder, or SoundKit IDs for playing media"
+DBM_CORE_SOUNDKIT_MIGRATION			= "One or more of your warning/special warning sounds were reset to defaults do to incompatability with patch 8.2 and later (sound must reside in interface folder to play by path, or use SoundKit ID)"
 
 DBM_CORE_WORLDBOSS_ENGAGED			= "%s was possibly engaged on your realm at %s percent health. (Sent by %s)"
 DBM_CORE_WORLDBOSS_DEFEATED			= "%s was possibly defeated on your realm (Sent by %s)."
@@ -144,12 +134,6 @@ DBM_CORE_WHISPER_COMBAT_END_KILL			= "%s has defeated %s!"
 DBM_CORE_WHISPER_COMBAT_END_KILL_STATS		= "%s has defeated %s! They have %d total victories."
 DBM_CORE_WHISPER_COMBAT_END_WIPE_AT			= "%s has wiped on %s at %s"
 DBM_CORE_WHISPER_COMBAT_END_WIPE_STATS_AT	= "%s has wiped on %s at %s. They have %d total wipes on this difficulty."
---Scenarios (no percents. words like "fighting" or "wipe" changed to better fit scenarios)
-DBM_CORE_AUTO_RESPOND_WHISPER_SCENARIO		= "%s is busy in %s (%d/%d people alive)"
-DBM_CORE_WHISPER_SCENARIO_END_KILL			= "%s has completed %s!"
-DBM_CORE_WHISPER_SCENARIO_END_KILL_STATS	= "%s has completed %s! They have %d total victories."
-DBM_CORE_WHISPER_SCENARIO_END_WIPE			= "%s did not complete %s"
-DBM_CORE_WHISPER_SCENARIO_END_WIPE_STATS	= "%s did not complete %s. They have %d total incompletes on this difficulty."
 
 DBM_CORE_VERSIONCHECK_HEADER		= "Boss Mod - Versions"
 DBM_CORE_VERSIONCHECK_ENTRY			= "%s: %s (%s) %s"--One Boss mod
@@ -176,11 +160,12 @@ DBM_CORE_UPDATEREMINDER_MAJORPATCH		= "WARNING: Do to your Deadly Boss Mods bein
 DBM_CORE_UPDATEREMINDER_TESTVERSION		= "WARNING: You are using a version of Deadly Boss Mods not intended to be used with this game version. Please make sure you download the appropriate version for your game client from deadlybossmods.com or curse."
 DBM_CORE_VEM							= "WARNING: You are running both Deadly Boss Mods and Voice Encounter Mods. DBM will not run in this configuration and therefore will not be loaded."
 DBM_CORE_3RDPROFILES					= "WARNING: DBM-Profiles not compatible with this version of DBM. It must be removed before DBM can proceed, to avoid conflict."
+DBM_CORE_VICTORYSOUND					= "WARNING: DBM-VictorySound not compatible with this version of DBM. It must be removed before DBM can proceed, to avoid conflict."
 DBM_CORE_DPMCORE						= "WARNING: Deadly PvP mods is discontinued and not compatible with this version of DBM. It must be removed before DBM can proceed, to avoid conflict."
 DBM_CORE_DBMLDB							= "WARNING: DBM-LDB is now built into DBM-Core. While it won't do any harm, it's recommended to remove 'DBM-LDB' from your addons folder"
 DBM_CORE_UPDATE_REQUIRES_RELAUNCH		= "WARNING: This DBM update will not work correctly if you don't fully restart your game client. This update contains new files or .toc file changes that cannot be loaded via ReloadUI. You may encounter broken functionality or errors if you continue without a client restart."
 DBM_CORE_OUT_OF_DATE_NAG				= "Your version of Deadly Boss Mods is out-of-date. It is recommended you update for this fight so you are not missing an important alert or timer or a yell rest of raid is expecting to see from you."
-DBM_CORE_RETAIL_ONLY					= "WARNING: This version of DBM is only meant to be used with latest retail version World of Warcraft. Uninstall this version and install correct version of DBM for Classic WoW."
+DBM_CORE_CLASSIC_ONLY					= "WARNING: This version of DBM is only meant to be used with World of Warcraft: Classic. Uninstall this version and install correct version of DBM for Retail WoW."
 
 DBM_CORE_MOVABLE_BAR				= "Drag me!"
 
@@ -288,9 +273,7 @@ DBM_BOSS							= "Boss"
 DBM_CORE_ROOM_EDGE					= "Room Edge"
 DBM_CORE_FAR_AWAY					= "Far Away"
 DBM_CORE_BREAK_LOS					= "Break LOS"
-DBM_CORE_RESTORE_LOS				= "Restore/Maintain LOS"
 DBM_CORE_SAFE						= "Safe"
-DBM_CORE_NOTSAFE					= "Not Safe"
 DBM_CORE_SHIELD						= "Shield"
 DBM_INCOMING						= "%s Incoming"
 --Common Locals end
@@ -332,8 +315,7 @@ DBM_CORE_AUTO_ANNOUNCE_TEXTS = {
 	stage		= "Stage %s",
 	prestage	= "Stage %s soon",
 	count		= "%s (%%s)",
-	stack		= "%s on >%%s< (%%d)",
-	moveto		= "%s - move to >%%s<"
+	stack		= "%s on >%%s< (%%d)"
 }
 
 local prewarnOption = "Show pre-warning for $spell:%s"
@@ -356,8 +338,7 @@ DBM_CORE_AUTO_ANNOUNCE_OPTIONS = {
 	stagechange	= "Announce stage changes",
 	prestage	= "Show a prewarning for Stage %s",
 	count		= "Show warning for $spell:%s (with count)",
-	stack		= "Announce $spell:%s stacks",
-	moveto		= "Show warning to move to someone or some place for $spell:%s"
+	stack		= "Announce $spell:%s stacks"
 }
 
 DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
@@ -472,7 +453,7 @@ DBM_CORE_AUTO_TIMER_TEXTS = {
 	stage		= "Next Stage",
 	adds		= "Incoming Adds",
 	addscustom	= "Incoming Adds (%%s)",
-	roleplay	= GUILD_INTEREST_RP
+	roleplay	= "Roleplay"
 }
 
 DBM_CORE_AUTO_TIMER_OPTIONS = {
@@ -504,6 +485,13 @@ DBM_CORE_AUTO_ICONS_OPTION_TEXT2		= "Set icons on $spell:%s"
 DBM_CORE_AUTO_ARROW_OPTION_TEXT			= "Show DBM Arrow to move toward target affected by $spell:%s"
 DBM_CORE_AUTO_ARROW_OPTION_TEXT2		= "Show DBM Arrow to move away from target affected by $spell:%s"
 DBM_CORE_AUTO_ARROW_OPTION_TEXT3		= "Show DBM Arrow to move toward specific location for $spell:%s"
+DBM_CORE_AUTO_VOICE_OPTION_TEXT			= "Play spoken alerts for $spell:%s"
+DBM_CORE_AUTO_VOICE2_OPTION_TEXT		= "Play spoken alerts for stage changes"
+DBM_CORE_AUTO_VOICE3_OPTION_TEXT		= "Play spoken alerts for incoming adds"
+DBM_CORE_AUTO_VOICE4_OPTION_TEXT		= "Play spoken alerts for bad stuff on ground"
+DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT		= "Play countdown sound for $spell:%s cooldown"
+DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT2	= "Play countdown sound for when $spell:%s fades"
+DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT		= "Play countout sound for $spell:%s duration"
 DBM_CORE_AUTO_YELL_OPTION_TEXT = {
 	shortyell		= "Yell when you are affected by $spell:%s",
 	yell			= "Yell (with player name) when you are affected by $spell:%s",
@@ -524,7 +512,7 @@ DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT = {
 	position 		= "%s %%s on {rt%%d}"..UnitName("player").."{rt%%d}",
 	combo			= "%s and %%s"--Spell name (from option, plus spellname given in arg)
 }
-DBM_CORE_AUTO_YELL_CUSTOM_POSITION		= "{rt%d}%s"--Doesn't need translating. Has no strings
+DBM_CORE_AUTO_YELL_CUSTOM_POSITION		= "{rt%d}%s{"--Doesn't need translating. Has no strings
 DBM_CORE_AUTO_YELL_CUSTOM_POSITION2		= "{rt%d}%s{rt%d}"--Doesn't need translating. Has no strings
 DBM_CORE_AUTO_YELL_CUSTOM_FADE			= "%s faded"
 DBM_CORE_AUTO_HUD_OPTION_TEXT			= "Show HudMap for $spell:%s (Retired)"
@@ -556,7 +544,7 @@ DBM_CORE_HUD_USAGE	= {
 	"Valid types: arrow, dot, red, blue, green, yellow, icon (requires a target with raid icon)",
 	"Valid targets: target, focus, <playername>",
 	"Valid durations: any number (in seconds). If left blank, 20min will be used.",
-	"/dbm hud hide:  disables and hides the HUD"
+	"/dbm hud hide: disables user generated HUD objects"
 }
 
 DBM_ARROW_MOVABLE					= "Arrow movable"
@@ -606,43 +594,43 @@ DBM_CORE_DUR_ENTRY					= "%s: Durability [%d percent] / Gear broken [%s]"
 DBM_CORE_LAG_FOOTER					= "No Response: %s"
 
 --Role Icons
-DBM_CORE_TANK_ICON			= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:6:21:7:27|t"
-DBM_CORE_DAMAGE_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:39:55:7:27|t"
-DBM_CORE_HEALER_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:70:86:7:27|t"
+DBM_CORE_TANK_ICON			= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:6:21:7:27|t"
+DBM_CORE_DAMAGE_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:39:55:7:27|t"
+DBM_CORE_HEALER_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:70:86:7:27|t"
 
-DBM_CORE_TANK_ICON_SMALL	= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:12:12:0:0:255:66:6:21:7:27|t"
-DBM_CORE_DAMAGE_ICON_SMALL	= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:12:12:0:0:255:66:39:55:7:27|t"
-DBM_CORE_HEALER_ICON_SMALL	= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:12:12:0:0:255:66:70:86:7:27|t"
+DBM_CORE_TANK_ICON_SMALL	= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:12:12:0:0:255:66:6:21:7:27|t"
+DBM_CORE_DAMAGE_ICON_SMALL	= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:12:12:0:0:255:66:39:55:7:27|t"
+DBM_CORE_HEALER_ICON_SMALL	= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:12:12:0:0:255:66:70:86:7:27|t"
 --Importance Icons
-DBM_CORE_HEROIC_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:22:22:0:0:255:66:102:118:7:27|t"
-DBM_CORE_DEADLY_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:22:22:0:0:255:66:133:153:7:27|t"
-DBM_CORE_IMPORTANT_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:168:182:7:27|t"
-DBM_CORE_MYTHIC_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:22:22:0:0:255:66:133:153:40:58|t"
+DBM_CORE_HEROIC_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:22:22:0:0:255:66:102:118:7:27|t"
+DBM_CORE_DEADLY_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:22:22:0:0:255:66:133:153:7:27|t"
+DBM_CORE_IMPORTANT_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:168:182:7:27|t"
+DBM_CORE_MYTHIC_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:22:22:0:0:255:66:133:153:40:58|t"
 
-DBM_CORE_HEROIC_ICON_SMALL	= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:14:14:0:0:255:66:102:118:7:27|t"
-DBM_CORE_DEADLY_ICON_SMALL	= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:14:14:0:0:255:66:133:153:7:27|t"
-DBM_CORE_IMPORTANT_ICON_SMALL= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:12:12:0:0:255:66:168:182:7:27|t"
+DBM_CORE_HEROIC_ICON_SMALL	= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:14:14:0:0:255:66:102:118:7:27|t"
+DBM_CORE_DEADLY_ICON_SMALL	= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:14:14:0:0:255:66:133:153:7:27|t"
+DBM_CORE_IMPORTANT_ICON_SMALL= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:12:12:0:0:255:66:168:182:7:27|t"
 --Type Icons
-DBM_CORE_INTERRUPT_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:198:214:7:27|t"
-DBM_CORE_MAGIC_ICON			= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:229:247:7:27|t"
-DBM_CORE_CURSE_ICON			= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:6:21:40:58|t"
-DBM_CORE_POISON_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:39:55:40:58|t"
-DBM_CORE_DISEASE_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:70:86:40:58|t"
-DBM_CORE_ENRAGE_ICON		= "|TInterface\\EncounterJournal\\UI-EJ-Icons.blp:20:20:0:0:255:66:102:118:40:58|t"
+DBM_CORE_INTERRUPT_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:198:214:7:27|t"
+DBM_CORE_MAGIC_ICON			= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:229:247:7:27|t"
+DBM_CORE_CURSE_ICON			= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:6:21:40:58|t"
+DBM_CORE_POISON_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:39:55:40:58|t"
+DBM_CORE_DISEASE_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:70:86:40:58|t"
+DBM_CORE_ENRAGE_ICON		= "|TInterface\\AddOns\\DBM-Core\\textures\\UI-EJ-Icons.blp:20:20:0:0:255:66:102:118:40:58|t"
 
 --LDB
-DBM_LDB_TOOLTIP_HELP1	= "Left-click to open DBM"
-DBM_LDB_TOOLTIP_HELP2	= "Right-click to open config menu"
+DBM_LDB_TOOLTIP_HELP1	= "Click to open DBM"
+--DBM_LDB_TOOLTIP_HELP2	= "Right-click to open config menu"
 
 DBM_LDB_LOAD_MODS		= "Load boss mods"
 
-DBM_LDB_CAT_BFA			= EXPANSION_NAME7
-DBM_LDB_CAT_LEG			= EXPANSION_NAME6
-DBM_LDB_CAT_WOD			= EXPANSION_NAME5
-DBM_LDB_CAT_MOP			= EXPANSION_NAME4
-DBM_LDB_CAT_CATA		= EXPANSION_NAME3
-DBM_LDB_CAT_WOTLK		= EXPANSION_NAME2
-DBM_LDB_CAT_BC			= EXPANSION_NAME1
+DBM_LDB_CAT_BFA			= "Battle for Azeroth"
+DBM_LDB_CAT_LEG			= "Legion"
+DBM_LDB_CAT_WOD			= "Warlords of Draenor"
+DBM_LDB_CAT_MOP			= "Mists of Pandaria"
+DBM_LDB_CAT_CATA		= "Cataclysm"
+DBM_LDB_CAT_WOTLK		= "Wrath of the Lich King"
+DBM_LDB_CAT_BC			= "Burning Crusade"
 DBM_LDB_CAT_CLASSIC 	= EXPANSION_NAME0
 DBM_LDB_CAT_OTHER		= "Other Boss Mods"
 
